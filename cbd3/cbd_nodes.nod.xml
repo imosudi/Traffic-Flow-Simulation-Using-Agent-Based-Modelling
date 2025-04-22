@@ -1,0 +1,14 @@
+<nodes>
+    <!-- Primary grid intersections with traffic lights -->
+    <node id="n1" x="0" y="0" type="traffic_light"/>
+    <node id="n2" x="200" y="0" type="traffic_light"/>
+    <node id="n3" x="400" y="0" type="traffic_light"/>
+    <node id="n4" x="0" y="200" type="traffic_light"/>
+    <node id="n5" x="200" y="200" type="traffic_light"/>
+    <node id="n6" x="400" y="200" type="traffic_light"/>
+    
+    <!-- Secondary grid intersections with priority -->
+    <node id="n7" x="100" y="100" type="priority"/>
+    <node id="n8" x="300" y="100" type="priority"/>
+    <node id="n9" x="400" y="300" type="priority"/>
+</nodes>

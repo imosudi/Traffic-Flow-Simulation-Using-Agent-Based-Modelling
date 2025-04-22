@@ -1,0 +1,10 @@
+<configuration>
+    <input>
+        <net-file value="cbd.net.xml"/>
+        <route-files value="cbd.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+</configuration>

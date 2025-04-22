@@ -1,0 +1,10 @@
+<configuration>
+    <input>
+        <node-files value="metro_nodes.nod.xml"/>
+        <edge-files value="metro_edges.edg.xml"/>
+        <type-files value="metro_types.type.xml"/>
+    </input>
+    <output>
+        <output-file value="metro.net.xml"/>
+    </output>
+</configuration>

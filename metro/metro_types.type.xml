@@ -1,0 +1,6 @@
+<types>
+    <type id="car" numLanes="1" speed="13.9"/>
+    <type id="bus" numLanes="1" speed="11.1"/>
+    <type id="bike" numLanes="1" speed="8.3"/>
+    <type id="tricycle" numLanes="1" speed="9.7"/>
+</types>

@@ -1,0 +1,25 @@
+<configuration>
+    <input>
+        <node-files value="cbd_nodes.nod.xml"/>
+        <edge-files value="cbd_edges.edg.xml"/>
+        <type-files value="cbd_types.type.xml"/>
+    </input>
+    <output>
+        <output-file value="cbd.net.xml"/>
+    </output>
+    <processing>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+        <check-lane-foes.all value="true"/>
+        <offset.disable-normalization value="false"/>
+    </processing>
+    <tls_building>
+        <min-depart-dist value="1.0"/>
+    </tls_building>
+    <report>
+        <verbose value="true"/>
+        <log value="netbuild.log"/>
+    </report>
+</configuration>

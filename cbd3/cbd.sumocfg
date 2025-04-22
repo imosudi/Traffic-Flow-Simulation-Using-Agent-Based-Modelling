@@ -1,0 +1,27 @@
+<configuration>
+    <input>
+        <net-file value="cbd.net.xml"/>
+        <route-files value="cbd.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+        <step-length value="0.1"/>
+    </time>
+    <processing>
+        <lateral-resolution value="0.8"/>
+        <ignore-junction-blocker value="60"/>
+        <collision.action value="warn"/>
+        <time-to-teleport value="120"/>
+    </processing>
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <log value="simulation.log"/>
+    </report>
+    <gui_only>
+        <gui-settings-file value="cbd_gui.xml"/>
+        <start value="true"/>
+        <quit-on-end value="false"/>
+    </gui_only>
+</configuration>

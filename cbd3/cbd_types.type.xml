@@ -1,0 +1,7 @@
+<types>
+    <type id="urban_road_2x2" numLanes="2" speed="13.9" priority="3" allow="all">
+        <param key="sidewalks" value="true"/>
+        <param key="width" value="3.5"/>
+        <param key="shape" value="default"/>
+    </type>
+</types>
