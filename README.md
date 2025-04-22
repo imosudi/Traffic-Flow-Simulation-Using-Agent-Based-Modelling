@@ -38,14 +38,37 @@ Agent-Based Simulation
 4. animation of cars and lights.
 
 ## Background Studies
-### Urban Traffic Modelling
-This area involves the simulation of how vehicles behave and interact within a city or highway road network. It helps predict traffic congestion, test light-timing schemes, and optimise infrastructure.
 
-### Cellular Automata
-A discrete model used in traffic flow to simulate the behaviour of vehicles on roads using grid-like cells that evolve with simple rules.
+### Urban Traffic Modelling
+Urban traffic modelling is a critical aspect of smart city development and intelligent transport systems (ITS). It involves creating abstract representations of real-world road networks and vehicle behaviours to study traffic dynamics such as congestion, delays, route choices, and signal optimisation. These models help city planners and researchers evaluate scenarios, plan infrastructure upgrades, and test policy interventions like congestion pricing or signal retiming. Traffic models are often categorised into:
+Macroscopic models: Treat traffic as a continuous flow (like fluid dynamics).
+Microscopic models: Focus on individual vehicle interactions.
+Mesoscopic models: A hybrid of both, capturing vehicle platoons.
+Urban traffic simulation tools like SUMO (Simulation of Urban Mobility) offer the ability to simulate thousands of vehicles on realistic road networks, generating valuable metrics like travel time, vehicle emissions, and bottleneck locations.
+
+### Cellular Automata in Traffic Simulation
+Cellular Automata (CA) are grid-based computational models in which each cell changes its state based on a set of local rules and the states of neighbouring cells. In traffic modelling:
+
+Roads are divided into discrete cells, each representing a segment of the road (e.g., 7.5m per cell).
+Vehicles occupy these cells and transition based on velocity, braking, and obstacle detection rules.
+Rules mimic real-world behaviour like acceleration, lane changing, and collision avoidance.
+One popular CA traffic model is the Nagel-Schreckenberg model, which simplifies the simulation of traffic jams and free-flowing movement. CA models are particularly useful for fast, large-scale simulations where computational simplicity and emergent behaviour patterns are key.
 
 ### Multi-Agent Systems in Transport
-These systems use autonomous "agents" (e.g., cars) that interact based on rules and communicate to resolve conflicts or adapt to real-time traffic conditions.
+A Multi-Agent System (MAS) consists of autonomous entities (agents), each capable of independent decision-making, interaction, and adaptation. In traffic simulations, agents can represent:
+
+Vehicles: With goals (e.g., destination), capabilities (speed, size), and behaviours (aggressiveness, route choice).
+Traffic Lights: Adaptive or fixed-timing agents reacting to flow changes.
+Pedestrians, emergency services, and cyclists: Each with unique navigation logic.
+Agent-based traffic modelling allows researchers to simulate complex interactions, such as:
+Lane merging under congestion.
+Adaptive rerouting during incidents.
+Cooperative driving in connected vehicle scenarios. MAS encourages decentralised logic, making the system robust and closer to real-world unpredictability.
 
 ### SUMO–NetLogo Integration
-By combining the microscopic traffic simulation of SUMO with NetLogo's agent-centric framework, more complex behaviours like adaptive routing and driver reactions can be modelled.
+SUMO (Simulation of Urban MObility) is a powerful, open-source microscopic traffic simulation tool capable of modelling complex networks and generating detailed traffic flow data. NetLogo, on the other hand, is a high-level agent-based modelling environment designed for visualisation, experimentation, and educational simulations.
+
+Integrating SUMO with NetLogo allows the strengths of both tools to be combined:
+SUMO handles detailed traffic flow generation and network simulation.
+NetLogo visualises the simulation using user-defined car agents, traffic lights, and urban features, adding custom logic or social behaviours (e.g., pedestrian reactions, emergency response).
+Data export from SUMO (via XML or CSV) can be used to initialise car agents in NetLogo, where their movement can be tracked, modified, or visualised dynamically. This hybrid approach offers both computational accuracy and experimental flexibility, ideal for academic exploration and smart city prototyping."

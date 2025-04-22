@@ -1,0 +1,17 @@
+<edges>
+    <!-- Horizontal roads -->
+    <edge id="e1" from="n1" to="n2" type="urban"/>
+    <edge id="e2" from="n2" to="n3" type="urban"/>
+    <edge id="e3" from="n4" to="n5" type="urban"/>
+    <edge id="e4" from="n5" to="n6" type="urban"/>
+    <edge id="e5" from="n7" to="n8" type="residential"/>
+    <edge id="e6" from="n8" to="n9" type="residential"/>
+
+    <!-- Vertical roads -->
+    <edge id="e7" from="n1" to="n4" type="highway"/>
+    <edge id="e8" from="n4" to="n7" type="highway"/>
+    <edge id="e9" from="n2" to="n5" type="urban"/>
+    <edge id="e10" from="n5" to="n8" type="urban"/>
+    <edge id="e11" from="n3" to="n6" type="residential"/>
+    <edge id="e12" from="n6" to="n9" type="residential"/>
+</edges>

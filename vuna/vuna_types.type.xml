@@ -1,0 +1,5 @@
+<types>
+    <type id="urban" numLanes="2" speed="13.89"/>        <!-- 50 km/h -->
+    <type id="residential" numLanes="1" speed="8.33"/>   <!-- 30 km/h -->
+    <type id="highway" numLanes="3" speed="27.78"/>      <!-- 100 km/h -->
+</types>

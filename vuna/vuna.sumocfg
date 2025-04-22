@@ -1,0 +1,15 @@
+<configuration>
+    <input>
+        <net-file value="vuna.net.xml"/>
+        <route-files value="vuna.rou.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+
+    <output>
+        <summary value="vuna_summary.xml"/>
+    </output>
+</configuration>

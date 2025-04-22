@@ -1,0 +1,10 @@
+<configuration>
+    <input>
+        <node-files value="vuna_nodes.nod.xml"/>
+        <edge-files value="vuna_edges.edg.xml"/>
+        <type-files value="vuna_types.type.xml"/>
+    </input>
+    <output>
+        <output-file value="vuna.net.xml"/>
+    </output>
+</configuration>
