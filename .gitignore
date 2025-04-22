@@ -1,1 +1,5 @@
 downloads/
+*.net.xml
+*.rou.xml  
+*.trips.xml
+*_summary.xml
