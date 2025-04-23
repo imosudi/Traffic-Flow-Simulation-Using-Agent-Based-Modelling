@@ -3,3 +3,5 @@ downloads/
 *.rou.xml  
 *.trips.xml
 *_summary.xml
+detector_*
+*_flow.xml
