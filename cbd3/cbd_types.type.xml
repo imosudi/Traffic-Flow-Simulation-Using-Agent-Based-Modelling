@@ -4,4 +4,7 @@
         <param key="width" value="3.5"/>
         <param key="shape" value="default"/>
     </type>
+    <type id="bike" priority="1" numLanes="1" speed="6.5"/>
+    <type id="pedestrian" priority="0" numLanes="1" speed="1.5"/>
 </types>
+    

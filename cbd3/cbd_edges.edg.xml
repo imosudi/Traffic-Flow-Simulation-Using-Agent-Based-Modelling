@@ -36,4 +36,7 @@
     <!-- Additional road to n9 (East extension) -->
     <edge id="e23" from="n6" to="n9" type="urban_road_2x2"/>
     <edge id="e24" from="n9" to="n6" type="urban_road_2x2"/>
+    <edge id="e25" from="n7" to="n8" type="bike"/>
+    <edge id="e26" from="n8" to="n6" type="bike"/>
+    <edge id="e27" from="n5" to="n7" type="pedestrian"/>
 </edges>
