@@ -1,12 +1,15 @@
+
 <configuration>
     <input>
         <net-file value="cbd.net.xml"/>
         <route-files value="cbd.rou.xml"/>
+        <additional-files value="cbd_detectors.add.xml"/>
+        
     </input>
     <time>
         <begin value="0"/>
-        <end value="3600"/>
-        <step-length value="0.1"/>
+        <end value="21600"/>
+        <step-length value="0.5"/>
     </time>
     <processing>
         <lateral-resolution value="0.8"/>
