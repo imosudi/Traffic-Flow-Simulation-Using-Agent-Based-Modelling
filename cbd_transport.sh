@@ -44,6 +44,6 @@ echo "Starting SUMO simulation..."
 cd cbd/ && \
 netconvert -c cbd.netccfg && \
 /usr/share/sumo/tools/randomTrips.py -n cbd.net.xml -o cbd.rou.xml -r cbd.trips.xml \
-    --prefix veh --end 3600 --validate --seed 42 \
+    --prefix veh --end 21600 --validate --seed 42 \
     --trip-attributes="departLane=\"best\" departSpeed=\"max\" departPos=\"random\"" && \
 sumo-gui -c cbd.sumocfg

@@ -1,29 +1,29 @@
 <additional>
     <!-- E1 Detectors (Induction loops) at main intersections -->
-    <!-- West-East direction ->
+    <!-- West-East direction -->
     <inductionLoop id="detector_e1_0" lane="e1_0" pos="140" freq="60" file="detector_e1_0.xml"/>
     <inductionLoop id="detector_e1_1" lane="e1_1" pos="140" freq="60" file="detector_e1_1.xml"/>
     <inductionLoop id="detector_e2_0" lane="e2_0" pos="140" freq="60" file="detector_e2_0.xml"/>
     <inductionLoop id="detector_e2_1" lane="e2_1" pos="140" freq="60" file="detector_e2_1.xml"/>
-    -->
-    <!-- East-West direction ->
+    
+    <!-- East-West direction -->
     <inductionLoop id="detector_e5_0" lane="e5_0" pos="140" freq="60" file="detector_e5_0.xml"/>
     <inductionLoop id="detector_e5_1" lane="e5_1" pos="140" freq="60" file="detector_e5_1.xml"/>
     <inductionLoop id="detector_e6_0" lane="e6_0" pos="140" freq="60" file="detector_e6_0.xml"/>
     <inductionLoop id="detector_e6_1" lane="e6_1" pos="140" freq="60" file="detector_e6_1.xml"/>
-    -->
-    <!-- North-South direction ->
+    
+    <!-- North-South direction -->
     <inductionLoop id="detector_e9_0" lane="e9_0" pos="140" freq="60" file="detector_e9_0.xml"/>
     <inductionLoop id="detector_e9_1" lane="e9_1" pos="140" freq="60" file="detector_e9_1.xml"/>
     <inductionLoop id="detector_e10_0" lane="e10_0" pos="140" freq="60" file="detector_e10_0.xml"/>
     <inductionLoop id="detector_e10_1" lane="e10_1" pos="140" freq="60" file="detector_e10_1.xml"/>
-    -->
-    <!-- South-North direction ->
+    
+    <!-- South-North direction -->
     <inductionLoop id="detector_e12_0" lane="e12_0" pos="140" freq="60" file="detector_e12_0.xml"/>
     <inductionLoop id="detector_e12_1" lane="e12_1" pos="140" freq="60" file="detector_e12_1.xml"/>
     <inductionLoop id="detector_e13_0" lane="e13_0" pos="140" freq="60" file="detector_e13_0.xml"/>
     <inductionLoop id="detector_e13_1" lane="e13_1" pos="140" freq="60" file="detector_e13_1.xml"/>
-    -->
+    
     
     <!-- E2 Detectors (Multi-lane detectors) for traffic flow analysis -->
     <laneAreaDetector id="e1_flow" lane="e1_0" pos="100" endPos="150" freq="300" file="e1_flow.xml"/>

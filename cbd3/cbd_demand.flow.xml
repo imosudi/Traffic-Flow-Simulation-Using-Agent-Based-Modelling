@@ -1,0 +1,20 @@
+<routes>
+    <!-- Define vehicle types -->
+    <vType id="passenger" accel="2.6" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="55.55" color="1,0,0"/>
+    <vType id="bus" accel="1.2" decel="4.0" sigma="0.5" length="12" minGap="3" maxSpeed="25" color="0,0,1"/>
+    
+    <!-- Define routes -->
+    <route id="route_west_east" edges="e1 e2 e3 e4"/>
+    <route id="route_east_west" edges="e5 e6 e7 e8"/>
+    <route id="route_north_south" edges="e9 e10 e11"/>
+    <route id="route_south_north" edges="e12 e13 e14"/>
+    
+    <!-- Define flows that span the entire simulation -->
+    <flow id="flow_west_east" type="passenger" route="route_west_east" begin="0" end="21600" vehsPerHour="600"/>
+    <flow id="flow_east_west" type="passenger" route="route_east_west" begin="0" end="21600" vehsPerHour="450"/>
+    <flow id="flow_north_south" type="passenger" route="route_north_south" begin="0" end="21600" vehsPerHour="300"/>
+    <flow id="flow_south_north" type="passenger" route="route_south_north" begin="0" end="21600" vehsPerHour="350"/>
+    
+    <!-- Public transport -->
+    <flow id="bus_line1" type="bus" route="route_west_east" begin="0" end="21600" period="600"/>
+</routes>
