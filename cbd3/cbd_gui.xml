@@ -2,7 +2,7 @@
     <scheme name="real world"/>
     <delay value="50"/>
     <viewport zoom="100" x="200" y="100" angle="0"/>
-    <decal file="background.jpg" centerX="200" centerY="100" width="800" height="600" rotation="0"/>
+    <decal file="background.png" centerX="200" centerY="100" width="800" height="600" rotation="0"/>
     <background backgroundColor="240,240,240" showGrid="1" gridXSize="100.00" gridYSize="100.00"/>
     <edges laneEdgeMode="0" laneShowBorders="1" showLinkDecals="1" showRails="1" hideConnectors="0"
            edgeName_show="0" edgeName_size="50.00" edgeName_color="orange" 
