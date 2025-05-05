@@ -144,7 +144,6 @@ This will help us address your specific issues more efficiently during class.
 
 ---
 
-**Remember**: The goal is not just to follow these steps mechanically, but to understand what each tool does and how they work together to create transport network simulations. Take your time to explore and experiment with the tools as you set up your environment.
 
 ## Setup Instructions for Windows and macOS Users
 
@@ -276,4 +275,6 @@ chmod +x vuna_transport.sh cbd3_transport.sh
 - If a script doesn't run properly, check file permissions and line endings (Windows text editors sometimes change these)
 - For any persistent issues, try running SUMO directly with the configuration files the scripts generate
 
-**Reminder**: Complete this setup before class begins. Come prepared with specific questions about any issues you encountered during setup. If everything works as expected, be ready to help classmates troubleshoot their setups.
+---
+
+**Remember**: The goal is not just to follow these steps mechanically, but to understand what each tool does and how they work together to create transport network simulations. Take your time to explore and experiment with the tools as you set up your environment.
