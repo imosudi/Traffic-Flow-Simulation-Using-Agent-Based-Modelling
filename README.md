@@ -66,9 +66,11 @@ Adaptive rerouting during incidents.
 Cooperative driving in connected vehicle scenarios. MAS encourages decentralised logic, making the system robust and closer to real-world unpredictability.
 
 ### SUMO–NetLogo Integration
+<div style="text-align: justify"> 
 SUMO (Simulation of Urban MObility) is a powerful, open-source microscopic traffic simulation tool capable of modelling complex networks and generating detailed traffic flow data. NetLogo, on the other hand, is a high-level agent-based modelling environment designed for visualisation, experimentation, and educational simulations.
-
+<br>
 Integrating SUMO with NetLogo allows the strengths of both tools to be combined:
 SUMO handles detailed traffic flow generation and network simulation.
 NetLogo visualises the simulation using user-defined car agents, traffic lights, and urban features, adding custom logic or social behaviours (e.g., pedestrian reactions, emergency response).
 Data export from SUMO (via XML or CSV) can be used to initialise car agents in NetLogo, where their movement can be tracked, modified, or visualised dynamically. This hybrid approach offers both computational accuracy and experimental flexibility, ideal for academic exploration and smart city prototyping."
+</div>
