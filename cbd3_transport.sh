@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "This script is meant to run properly on Ubuntu desktop systems."
+echo "This script is meant to run properly on Ubuntu desktop as well as other Debain based distribution systems."
 
 # Check if required tools are installed
 tools_missing=0
