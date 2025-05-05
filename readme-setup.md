@@ -9,6 +9,7 @@ Follow these steps to set up the repository on your local machine:
 ### Fork the Repository
 
 1. Navigate to the original GitHub repository in your web browser.
+    https://github.com/imosudi/Traffic-Flow-Simulation-Using-Agent-Based-Modelling.git
 2. Click the "Fork" button in the top-right corner to create a copy in your GitHub account.
 3. Wait for the forking process to complete.
 
@@ -17,8 +18,8 @@ Follow these steps to set up the repository on your local machine:
 Once you've forked the repository, clone it to your local machine:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/REPOSITORY-NAME.git
-cd REPOSITORY-NAME
+git clone https://github.com/YOUR-USERNAME/Traffic-Flow-Simulation-Using-Agent-Based-Modelling.git
+cd Traffic-Flow-Simulation-Using-Agent-Based-Modelling/
 ```
 
 ### Create a Working Branch
