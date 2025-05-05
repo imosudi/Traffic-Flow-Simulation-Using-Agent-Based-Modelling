@@ -1,4 +1,4 @@
-✅ Option 1: Create a Network from Scratch Using netconvert
+# Create a Network from Scratch Using netconvert
 netconvert is a command-line tool in SUMO that generates the .net.xml file (SUMO network) from a description of the road layout.
 
 🛠 Basic Steps:
@@ -56,14 +56,3 @@ Run a Simulation in GUI
 
 sumo-gui -n mynet.net.xml -r routes.rou.xml
 You can now observe vehicles moving along the defined roads.
-
-🗺️ Bonus: Use OSM Data for Realistic Networks
-If you want a realistic road network:
-
-1. Download OSM data from https://extract.bbbike.org
-2. Convert OSM to SUMO network:
-
-netconvert --osm-files yourfile.osm -o map.net.xml
-3. Visualise with:
-
-sumo-gui -n map.net.xml

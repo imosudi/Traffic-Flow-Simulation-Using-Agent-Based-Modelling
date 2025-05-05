@@ -1,37 +1,26 @@
-Loading net-file from 'cbd.net.xml' ... done (18ms).
-Loading additional-files from 'cbd_detectors.add.xml' ... done (9ms).
+Loading net-file from 'cbd.net.xml' ... done (21ms).
+Loading additional-files from 'cbd_detectors.add.xml' ... done (8ms).
 Loading route-files incrementally from 'cbd.rou.xml'
 Loading done.
 Simulation started with time: 0.00.
 Warning: Teleporting vehicle 'veh169'; waited too long (yield), lane=':n7_6_0', time=443.00.
 Warning: Vehicle 'veh169' ends teleporting on edge 'e16', time=443.00.
-Warning: Vehicle 'veh521' performs emergency braking on lane ':n5_19_0' with decel=9.00, wished=4.50, severity=1.00, time=546.00.
-Warning: Vehicle 'veh704' performs emergency braking on lane ':n2_10_0' with decel=9.00, wished=4.50, severity=1.00, time=727.00.
-Warning: Vehicle 'veh2129' performs emergency braking on lane ':n5_0_0' with decel=9.00, wished=4.50, severity=1.00, time=2171.00.
-Snapshot successfully saved!
-Warning: Vehicle 'veh4058' performs emergency braking on lane ':n5_0_0' with decel=9.00, wished=4.50, severity=1.00, time=4074.00.
-Warning: Vehicle 'veh4199' performs emergency braking on lane ':n2_10_0' with decel=9.00, wished=4.50, severity=1.00, time=4241.00.
-Warning: Vehicle 'veh5816' performs emergency braking on lane 'e12_1' with decel=9.00, wished=4.50, severity=1.00, time=5868.00.
-Warning: Vehicle 'veh6038' performs emergency braking on lane 'e6_0' with decel=9.00, wished=4.50, severity=1.00, time=6038.50.
-Warning: Vehicle 'veh5963' performs emergency braking on lane ':n5_0_0' with decel=9.00, wished=4.50, severity=1.00, time=6041.00.
-Warning: Vehicle 'veh6278' performs emergency braking on lane ':n2_10_0' with decel=9.00, wished=4.50, severity=1.00, time=6312.00.
-Simulation ended at time: 7389.00.
+Simulation ended at time: 476.00.
 Performance:
- Duration: 371.70s
- Real time factor: 19.879
- UPS: 4662.153146
+ Duration: 24.22s
+ Real time factor: 19.6564
+ UPS: 3716.509746
 Vehicles:
- Inserted: 7389 (Loaded: 7439)
- Running: 116
- Waiting: 0
+ Inserted: 474 (Loaded: 605)
+ Running: 123
+ Waiting: 2
  Teleports: 1 (Yield: 1)
- Emergency Braking: 9
-Statistics (avg of 7273):
- RouteLength: 487.61
- Speed: 5.22
- Duration: 117.93
- WaitingTime: 48.97
- TimeLoss: 74.08
- DepartDelay: 0.99
-DijkstraRouter answered 7425 queries and explored 13.92 edges on average.
-DijkstraRouter spent 0.08s answering queries (0.01ms on average).
+Statistics (avg of 351):
+ RouteLength: 476.39
+ Speed: 5.64
+ Duration: 100.63
+ WaitingTime: 39.99
+ TimeLoss: 59.95
+ DepartDelay: 0.27
+DijkstraRouter answered 476 queries and explored 14.11 edges on average.
+DijkstraRouter spent 0.01s answering queries (0.02ms on average).

@@ -1,7 +1,0 @@
-<types>
-    <type id="car" priority="3" numLanes="4" speed="13.9"/>
-    <type id="bus" priority="2" numLanes="4" speed="11.1"/>
-    <type id="bike" priority="1" numLanes="4" speed="6.5"/>
-    <type id="tricycle" priority="2" numLanes="4" speed="9.0"/>
-    <type id="pedestrian" priority="0" numLanes="4" speed="1.5"/>
-</types>
