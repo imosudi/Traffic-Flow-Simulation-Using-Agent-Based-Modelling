@@ -1,7 +1,7 @@
 # Create a Network from Scratch Using netconvert
 netconvert is a command-line tool in SUMO that generates the .net.xml file (SUMO network) from a description of the road layout.
 
-🛠 Basic Steps:
+## Basic Steps:
 1. Create a Node File (nodes.nod.xml)
 This defines junctions (intersections or endpoints).
 
@@ -28,7 +28,7 @@ netconvert from your terminal or command prompt:
 netconvert -n nodes.nod.xml -e edges.edg.xml -o basic_net.net.xml
 This creates mynet.net.xml — the SUMO network file.
 
-# Visualise the Network Using sumo-gui
+## Visualise the Network Using sumo-gui
 After generating the network, you can open it visually:
 
 1. Open SUMO GUI
@@ -41,7 +41,7 @@ Select your file mynet.net.xml
 
 You should see your network with nodes and edges.
 
-# Add Routes and Simulate Traffic
+## Add Routes and Simulate Traffic
 Create a Route File (basic_routes.rou.xml)
 
 <routes>
@@ -113,4 +113,9 @@ Adjust the delay vlue
 
 ![alt text](image.png)
 
+![alt text](image-1.png)
 
+
+Click on the "reload" button before running the simulation
+
+![alt text](image-2.png)
