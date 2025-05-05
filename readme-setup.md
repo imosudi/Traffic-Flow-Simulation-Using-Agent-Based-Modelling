@@ -145,4 +145,137 @@ This will help us address your specific issues more efficiently during class.
 
 ---
 
+
+## Setup Instructions for Windows and macOS Users
+
+If you're using Windows or macOS instead of Ubuntu/Debian, follow these platform-specific instructions to set up your environment.
+
+### 1. Installation Instructions
+
+#### Windows
+
+You have two main options for installing SUMO on Windows:
+
+**Option 1: Official Windows Installer (Recommended for most users)**
+
+1. Download the latest SUMO installer from the [official Eclipse SUMO website](https://sumo.dlr.de/docs/Downloads.php)
+2. Run the installer and follow the on-screen instructions
+3. The installer will add SUMO to your PATH automatically
+
+**Verify the installation:**
+
+```powershell
+# Open Command Prompt or PowerShell and run:
+sumo --version
+sumo-gui --version
+netconvert --version
+```
+
+**Option 2: Windows Subsystem for Linux (WSL)**
+
+If you prefer a Linux-like environment or encounter issues with the Windows installer:
+
+```powershell
+# Install WSL (Run in PowerShell as Administrator)
+wsl --install
+```
+
+Once WSL is installed with Ubuntu:
+1. Open Ubuntu on WSL
+2. Follow the Ubuntu installation instructions from the earlier section
+
+#### macOS
+
+**Installation via Homebrew (Recommended)**
+
+If you don't have Homebrew installed yet:
+
+```bash
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Then install SUMO:
+
+```bash
+# Install SUMO using Homebrew
+brew install sumo
+
+# Verify installation
+sumo --version
+sumo-gui --version
+netconvert --version
+```
+
+**Alternative: Installation from Source**
+
+If you need a specific version or Homebrew installation fails:
+1. Follow the [macOS build instructions](https://sumo.dlr.de/docs/Installing/MacOS_Build.html) from the SUMO documentation
+2. This method requires more technical knowledge but offers more control over the installation
+
+### 2. Running the Provided Shell Scripts
+
+#### Windows
+
+**Option 1: Using Git Bash (Easiest)**
+
+If you installed Git for Windows, you have Git Bash which can run shell scripts:
+
+```bash
+# Navigate to repository root
+cd path/to/repository
+
+# Make scripts executable (if needed)
+chmod +x vuna_transport.sh cbd3_transport.sh
+
+# Run scripts
+./vuna_transport.sh
+./cbd3_transport.sh
+```
+
+**Option 2: Using WSL**
+
+If you're using WSL:
+
+```bash
+# Navigate to repository in WSL
+cd /mnt/c/path/to/repository  # Adjust path as needed
+
+# Make scripts executable
+chmod +x vuna_transport.sh cbd3_transport.sh
+
+# Run scripts
+./vuna_transport.sh
+./cbd3_transport.sh
+```
+
+**Option 3: PowerShell Alternative**
+
+If you're more comfortable with PowerShell, you might need to create equivalent PowerShell scripts or run the commands manually. Consult with your instructor if you need assistance with this approach.
+
+#### macOS
+
+Running scripts on macOS is straightforward:
+
+```bash
+# Navigate to repository root
+cd path/to/repository
+
+# Make scripts executable
+chmod +x vuna_transport.sh cbd3_transport.sh
+
+# Run scripts
+./vuna_transport.sh
+./cbd3_transport.sh
+```
+
+### Important Notes for Non-Linux Users
+
+- Some paths in the scripts might need adjustment depending on your installation
+- Graphics performance might vary between platforms
+- If a script doesn't run properly, check file permissions and line endings (Windows text editors sometimes change these)
+- For any persistent issues, try running SUMO directly with the configuration files the scripts generate
+
+---
+
 **Remember**: The goal is not just to follow these steps mechanically, but to understand what each tool does and how they work together to create transport network simulations. Take your time to explore and experiment with the tools as you set up your environment.
