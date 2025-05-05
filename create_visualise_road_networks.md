@@ -20,8 +20,10 @@ This defines roads connecting nodes.
 </edges>
 
 3. Generate the Network
-Run netconvert from your terminal or command prompt:
-
+Run:
+```bash 
+netconvert from your terminal or command prompt:
+```
 
 netconvert -n nodes.nod.xml -e edges.edg.xml -o basic_net.net.xml
 This creates mynet.net.xml — the SUMO network file.
@@ -53,25 +55,33 @@ Create a Route File (basic_routes.rou.xml)
 
 Run a Simulation in GUI
 
+```bash
 sumo-gui -n mynet.net.xml -r basic_routes.rou.xml
+```
+
 You can now observe vehicles moving along the defined roads.
 
 Update the followings:
-  nodes.nod.xml
+  - `nodes.nod.xml`
+  ```xml
   <nodes>
     <node id="n1" x="0.0" y="0.0" type="priority"/>
     <node id="n2" x="100.0" y="0.0" type="priority"/>
     <node id="n3" x="100.0" y="50.0" type="priority"/>
   </nodes>
-
+```
   
-  edges.edg.xml
+  - `edges.edg.xml`
+
+```xml
   <edges>
     <edge id="e1" from="n1" to="n2" numLanes="1" speed="13.9"/>
     <edge id="e2" from="n2" to="n3" numLanes="2" speed="13.9"/>
   </edges>
-  
-  basic_routes.rou.xml
+```
+
+  - `basic_routes.rou.xml`
+```xml
   <routes>
     <vType id="car" accel="2.0" decel="4.5" length="5" maxSpeed="13.9" color="1,0,0"/>
 
@@ -85,9 +95,18 @@ Update the followings:
     <trip id="veh4" depart="1.00" departLane="best" departPos="random" departSpeed="max" from="e1" to="e2"/>
     
   </routes>
+```
 
-Run:  netconvert -n nodes.nod.xml -e edges.edg.xml -o basic_net.net.xml
-Then: sumo-gui -n basic_net.net.xml -r basic_routes.rou.xml
+Run:  
+
+```bash
+netconvert -n nodes.nod.xml -e edges.edg.xml -o basic_net.net.xml
+```
+
+Then: 
+```bash
+sumo-gui -n basic_net.net.xml -r basic_routes.rou.xml
+```
 
 If everything happend pretty to fast for your to be able to conviniently observe:
 Adjust the delay vlue
