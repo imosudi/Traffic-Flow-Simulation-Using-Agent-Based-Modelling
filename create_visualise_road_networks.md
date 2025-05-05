@@ -5,7 +5,6 @@ netconvert is a command-line tool in SUMO that generates the .net.xml file (SUMO
 1. Create a Node File (nodes.nod.xml)
 This defines junctions (intersections or endpoints).
 
-#touch nodes.nod.xml
 
 <nodes>
   <node id="n1" x="0.0" y="0.0" type="priority"/>
@@ -24,10 +23,10 @@ This defines roads connecting nodes.
 Run netconvert from your terminal or command prompt:
 
 
-netconvert -n nodes.nod.xml -e edges.edg.xml -o mynet.net.xml
+netconvert -n nodes.nod.xml -e edges.edg.xml -o basic_net.net.xml
 This creates mynet.net.xml — the SUMO network file.
 
-✅ Option 2: Visualise the Network Using sumo-gui
+# Visualise the Network Using sumo-gui
 After generating the network, you can open it visually:
 
 1. Open SUMO GUI
@@ -40,8 +39,8 @@ Select your file mynet.net.xml
 
 You should see your network with nodes and edges.
 
-🚦 Optional: Add Routes and Simulate Traffic
-Create a Route File (routes.rou.xml)
+# Add Routes and Simulate Traffic
+Create a Route File (basic_routes.rou.xml)
 
 <routes>
   <vType id="car" accel="2.0" decel="4.5" length="5" maxSpeed="13.9" color="1,0,0"/>
@@ -54,5 +53,45 @@ Create a Route File (routes.rou.xml)
 
 Run a Simulation in GUI
 
-sumo-gui -n mynet.net.xml -r routes.rou.xml
+sumo-gui -n mynet.net.xml -r basic_routes.rou.xml
 You can now observe vehicles moving along the defined roads.
+
+Update the followings:
+  nodes.nod.xml
+  <nodes>
+    <node id="n1" x="0.0" y="0.0" type="priority"/>
+    <node id="n2" x="100.0" y="0.0" type="priority"/>
+    <node id="n3" x="100.0" y="50.0" type="priority"/>
+  </nodes>
+
+  
+  edges.edg.xml
+  <edges>
+    <edge id="e1" from="n1" to="n2" numLanes="1" speed="13.9"/>
+    <edge id="e2" from="n2" to="n3" numLanes="2" speed="13.9"/>
+  </edges>
+  
+  basic_routes.rou.xml
+  <routes>
+    <vType id="car" accel="2.0" decel="4.5" length="5" maxSpeed="13.9" color="1,0,0"/>
+
+    <route id="r1" edges="e1"/>
+    <route id="r2" edges="e2"/>
+    
+    <vehicle id="veh1" type="car" route="r2" depart="1"/>
+    <vehicle id="veh2" type="car" route="r1" depart="1"/>
+
+    <trip id="veh3" type="car" depart="0.50" departLane="best" departPos="random" departSpeed="max" from="e1" to="e2"/>
+    <trip id="veh4" depart="1.00" departLane="best" departPos="random" departSpeed="max" from="e1" to="e2"/>
+    
+  </routes>
+
+Run:  netconvert -n nodes.nod.xml -e edges.edg.xml -o basic_net.net.xml
+Then: sumo-gui -n basic_net.net.xml -r basic_routes.rou.xml
+
+If everything happend pretty to fast for your to be able to conviniently observe:
+Adjust the delay vlue
+
+![alt text](image.png)
+
+
