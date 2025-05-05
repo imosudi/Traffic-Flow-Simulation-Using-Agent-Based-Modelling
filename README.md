@@ -55,8 +55,11 @@ Rules mimic real-world behaviour like acceleration, lane changing, and collision
 One popular CA traffic model is the Nagel-Schreckenberg model, which simplifies the simulation of traffic jams and free-flowing movement. CA models are particularly useful for fast, large-scale simulations where computational simplicity and emergent behaviour patterns are key.
 
 ### Multi-Agent Systems in Transport
+<div style="text-align: justify"> 
 A Multi-Agent System (MAS) consists of autonomous entities (agents), each capable of independent decision-making, interaction, and adaptation. In traffic simulations, agents can represent:
+</div>
 
+<div style="text-align: justify"> 
 Vehicles: With goals (e.g., destination), capabilities (speed, size), and behaviours (aggressiveness, route choice).
 Traffic Lights: Adaptive or fixed-timing agents reacting to flow changes.
 Pedestrians, emergency services, and cyclists: Each with unique navigation logic.
@@ -64,6 +67,7 @@ Agent-based traffic modelling allows researchers to simulate complex interaction
 Lane merging under congestion.
 Adaptive rerouting during incidents.
 Cooperative driving in connected vehicle scenarios. MAS encourages decentralised logic, making the system robust and closer to real-world unpredictability.
+</div>
 
 ### SUMO–NetLogo Integration
 <div style="text-align: justify"> 
