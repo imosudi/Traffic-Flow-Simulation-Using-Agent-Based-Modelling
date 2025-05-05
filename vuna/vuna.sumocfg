@@ -12,4 +12,9 @@
     <output>
         <summary value="vuna_summary.xml"/>
     </output>
+    <gui_only>
+        <gui-settings-file value="vuna_gui.xml"/>
+        <start value="true"/>
+        <quit-on-end value="false"/>
+    </gui_only>
 </configuration>
