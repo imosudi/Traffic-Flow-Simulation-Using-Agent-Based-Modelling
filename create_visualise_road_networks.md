@@ -75,10 +75,10 @@ If the simulation runs too quickly to observe conveniently:
 
 1. Adjust the delay value in the simulation controls:
 
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/f69f5c8a-88e1-47b6-b00c-2c60afb58b80)
 
-![alt text](image-1.png)
 
 2. Remember to click on the "reload" button before running the simulation:
 
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/f11bc2a1-d362-4e58-8b39-7e16c91edfc6)
+
