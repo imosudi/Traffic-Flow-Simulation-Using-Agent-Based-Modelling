@@ -20,16 +20,16 @@ Agent-Based Simulation
 1. https://sumo.dlr.de/docs/Data/Scenarios.html
 
 ## Setup Instructions
-1. 1. Install NetLogo and SUMO.
-2. 2. Use SUMO to design road networks and generate traffic flows.
-3. 3. Import into NetLogo using road grid patches.
-4. 4. Define car agents, lights, intersections.
+1. Install NetLogo and SUMO.
+2. Use SUMO to design road networks and generate traffic flows.
+3. Import into NetLogo using road grid patches.
+4. Define car agents, lights, intersections.
 
 ## Implementation Guide
-1. 1. Define agent behaviour for cars: acceleration, deceleration, turning.
-2. 2. Implement traffic light logic.
-3. 3. Simulate different traffic loads and measure wait times, congestion.
-4. 4. Use plots and histograms in NetLogo to visualise flow metrics.
+1. Define agent behaviour for cars: acceleration, deceleration, turning.
+2. Implement traffic light logic.
+3. Simulate different traffic loads and measure wait times, congestion.
+4. Use plots and histograms in NetLogo to visualise flow metrics.
 
 ## Expected Output(s)
 1. Traffic density heatmaps
