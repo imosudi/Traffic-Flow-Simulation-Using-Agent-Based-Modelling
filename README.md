@@ -59,6 +59,7 @@ One popular CA traffic model is the Nagel-Schreckenberg model, which simplifies 
 A Multi-Agent System (MAS) consists of autonomous entities (agents), each capable of independent decision-making, interaction, and adaptation. In traffic simulations, agents can represent:
 </div>
 
+
 <div style="text-align: justify"> 
 Vehicles: With goals (e.g., destination), capabilities (speed, size), and behaviours (aggressiveness, route choice).
 Traffic Lights: Adaptive or fixed-timing agents reacting to flow changes.
@@ -69,10 +70,12 @@ Adaptive rerouting during incidents.
 Cooperative driving in connected vehicle scenarios. MAS encourages decentralised logic, making the system robust and closer to real-world unpredictability.
 </div>
 
+
 ### SUMO–NetLogo Integration
 <div style="text-align: justify"> 
 SUMO (Simulation of Urban MObility) is a powerful, open-source microscopic traffic simulation tool capable of modelling complex networks and generating detailed traffic flow data. NetLogo, on the other hand, is a high-level agent-based modelling environment designed for visualisation, experimentation, and educational simulations.
 </div>
+
 
 <div style="text-align: justify"> 
 Integrating SUMO with NetLogo allows the strengths of both tools to be combined:
