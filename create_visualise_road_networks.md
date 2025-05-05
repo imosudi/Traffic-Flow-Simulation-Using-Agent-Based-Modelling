@@ -24,12 +24,13 @@ This defines roads connecting nodes.
 
 3. Generate the Network
 Run:
-```bash 
-netconvert from your terminal or command prompt:
-```
 
+netconvert from your terminal or command prompt:
+
+```bash 
 netconvert -n nodes.nod.xml -e edges.edg.xml -o basic_net.net.xml
-This creates mynet.net.xml — the SUMO network file.
+```
+This creates basic_net.net.xml — the SUMO network file.
 
 ## Visualise the Network Using sumo-gui
 After generating the network, you can open it visually:
