@@ -41,7 +41,7 @@ sumo-gui
 2. Load the Network
 Go to File → Open Network
 
-Select your file mynet.net.xml
+Select your file basic_net.net.xml
 
 You should see your network with nodes and edges.
 
