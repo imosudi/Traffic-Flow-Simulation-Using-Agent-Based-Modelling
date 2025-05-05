@@ -6,19 +6,21 @@ netconvert is a command-line tool in SUMO that generates the .net.xml file (SUMO
 1. Create a Node File (nodes.nod.xml)
 This defines junctions (intersections or endpoints).
 
-
+```xml
 <nodes>
   <node id="n1" x="0.0" y="0.0" type="priority"/>
   <node id="n2" x="100.0" y="0.0" type="priority"/>
 </nodes>
+```
 
 2. Create an Edge File (edges.edg.xml)
 This defines roads connecting nodes.
 
-
+```xml
 <edges>
   <edge id="e1" from="n1" to="n2" numLanes="1" speed="13.9"/>
 </edges>
+```
 
 3. Generate the Network
 Run:
@@ -45,6 +47,7 @@ You should see your network with nodes and edges.
 ## Add Routes and Simulate Traffic
 Create a Route File (basic_routes.rou.xml)
 
+```xml
 <routes>
   <vType id="car" accel="2.0" decel="4.5" length="5" maxSpeed="13.9" color="1,0,0"/>
 
@@ -53,7 +56,7 @@ Create a Route File (basic_routes.rou.xml)
   <vehicle id="veh1" type="car" route="r1" depart="0"/>
   <vehicle id="veh2" type="car" route="r1" depart="10"/>
 </routes>
-
+```
 Run a Simulation in GUI
 
 ```bash
@@ -112,11 +115,10 @@ sumo-gui -n basic_net.net.xml -r basic_routes.rou.xml
 If everything happend pretty to fast for your to be able to conviniently observe:
 Adjust the delay vlue
 
-![alt text](image.png)
-
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/f69f5c8a-88e1-47b6-b00c-2c60afb58b80)
 
 
 Click on the "reload" button before running the simulation
 
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/f11bc2a1-d362-4e58-8b39-7e16c91edfc6)
+
